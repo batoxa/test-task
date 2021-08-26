@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    background-color: #303469;
+    padding: 10px;
+    text-align: left;
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    justify-content: space-between;
+    line-height: 30px;
+    vertical-align: middle;
+}
