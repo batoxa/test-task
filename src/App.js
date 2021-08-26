@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { NewsListContainer } from "./components/NewsList/NewsListContainer";
+import { NewsPageContainer } from "./components/NewsPage/NewsPageContainer";
+import { Route } from "react-router";
+import { Header } from "./components/Header/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+    return (
+        <div className="App">
+            <Header />
+            <div className="content-wrapper">
+                <Route exact={true} path='/' render={() => <NewsListContainer />} />
+                <Route path='/news/:newsId?' render={() => <NewsPageContainer />} />
+            </div>
+        </div>
+    );
 }
 
-export default App;
+export { App };
+
