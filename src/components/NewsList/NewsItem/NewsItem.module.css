@@ -1,0 +1,17 @@
+.itemwrapper {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 5px #00000040, 0 15px 15px #00000038;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.itemwrapper a {
+    text-decoration: none;
+    color: #111;
+}
+
+.itemwrapper:hover {
+    background: radial-gradient(circle farthest-corner at 100px 50px, #fff, #ccc);
+}
